@@ -14,19 +14,51 @@
   }
 }
 
+/* Base styles (light mode by default) */
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Dark mode styles */
 @layer base {
   body {
     background-color: #ffffff;
     color: #333;
   }
 
+  /* This will be applied when the `dark` class is added to the body or html tag */
   body.dark {
     background-color: #1a202c;
     color: #e2e8f0;
   }
+}
+
+/* Additional Tailwind customizations for dark mode */
+html {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+html.dark {
+  background-color: #1a202c;
+  color: #e2e8f0;
+}
+
+/* Utility classes for dark mode support */
+.dark .bg-white {
+  background-color: #1a202c !important;
+}
+
+.dark .text-black {
+  color: #e2e8f0 !important;
+}
+
+.dark .bg-gray-900 {
+  background-color: #2d3748 !important;
+}
+
+.dark .bg-gray-800 {
+  background-color: #2b2f38 !important;
 }

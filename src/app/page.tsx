@@ -1,5 +1,3 @@
-import CallToAction from "./components/CallAction";
-import ExtraFeatures from "./components/ExtraFeatures";
 import Hero from "./components/Hero";
 import Hero2 from "./components/Hero2";
 import Hero3 from "./components/Hero3";

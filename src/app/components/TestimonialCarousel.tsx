@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 const testimonials = [
     {
@@ -9,8 +10,8 @@ const testimonials = [
         author: "Jane Doe",
         position: "Chief Technology Officer",
         companyName: "TechNova Corp",
-        companyLogo: "/technova-logo.png", // Replace with your logo file path
-        image: "/jane-doe.png", // Replace with the user image path
+        companyLogo: "https://logosandtypes.com/wp-content/uploads/2024/08/tango.svg", // Replace with your logo file path
+        image: "https://www.corporatephotographerslondon.com/wp-content/uploads/2022/02/FRA-1699dark-sq.jpg", // Replace with the user image path
     },
     {
         id: 2,
@@ -19,8 +20,8 @@ const testimonials = [
         author: "Michael Johnson",
         position: "Product Manager",
         companyName: "InnovateTech",
-        companyLogo: "/innovate-logo.png", // Replace with your logo file path
-        image: "/michael-johnson.png", // Replace with the user image path
+        companyLogo: "https://logosandtypes.com/wp-content/uploads/2024/08/tango.svg", // Replace with your logo file path
+        image: "https://headshots-inc.com/wp-content/uploads/2021/01/FINAL-Blog-Images.jpg", // Replace with the user image path
     },
     {
         id: 3,
@@ -29,18 +30,8 @@ const testimonials = [
         author: "Emily Richards",
         position: "Senior Developer",
         companyName: "Web Solutions",
-        companyLogo: "/websolutions-logo.png", // Replace with your logo file path
-        image: "/emily-richards.png", // Replace with the user image path
-    },
-    {
-        id: 4,
-        quote:
-            "TechNova’s expertise in AI and machine learning has helped us drive forward our product innovations. The value they’ve brought to the table is unmatched.",
-        author: "David Lee",
-        position: "Head of AI Development",
-        companyName: "AI Systems",
-        companyLogo: "/aisystems-logo.png", // Replace with your logo file path
-        image: "/david-lee.png", // Replace with the user image path
+        companyLogo: "https://logosandtypes.com/wp-content/uploads/2024/08/tango.svg", // Replace with your logo file path
+        image: "https://www.corporatephotographerslondon.com/wp-content/uploads/2021/09/corporate-headshots-retouching.jpg", // Replace with the user image path
     },
 ];
 
@@ -64,17 +55,21 @@ const Testimonial = () => {
                 {/* Profile Image and Company Logo */}
                 <div className="flex items-center justify-center space-x-8 mb-8">
                     <div className="relative w-28 h-28">
-                        <img
+                        <Image
                             src={image}
                             alt={author}
                             className="w-28 h-28 rounded-full object-cover border-4 border-white"
+                            width={112}  // Adjust width
+                            height={112} // Adjust height
                         />
                     </div>
                     <div className="flex flex-col justify-center">
-                        <img
+                        <Image
                             src={companyLogo}
                             alt={`${companyName} Logo`}
                             className="h-12"
+                            width={48}  // Adjust width
+                            height={48} // Adjust height
                         />
                     </div>
                 </div>

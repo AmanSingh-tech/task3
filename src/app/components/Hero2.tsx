@@ -2,22 +2,22 @@ import React from "react";
 
 const ServicesPage = () => {
   return (
-    <div className="bg-white text-black">
+    <div className="bg-white text-black dark:bg-gray-900 dark:text-white">
       {/* Hero Section */}
-      <div className="text-center py-16 px-6">
+      <div className="text-center py-16 px-6  dark:bg-black">
         <h1 className="text-3xl md:text-4xl font-bold mb-6">
           Our Core Services
         </h1>
         <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-10">
           We offer a range of cutting-edge services designed to help your business
-          succeed in the digital age. Whether you're looking for web development, cloud
+          succeed in the digital age. Whether you&apos;re looking for web development, cloud
           solutions, or AI/ML services, we have the expertise to deliver top-notch
           results.
         </p>
       </div>
 
       {/* Services Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 dark:bg-black lg:grid-cols-3 gap-8 px-6">
         {/* Web Development */}
         <div className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white p-6 rounded-lg shadow-lg">
           <h2 className="text-2xl font-semibold mb-4">Web Development</h2>
@@ -59,11 +59,8 @@ const ServicesPage = () => {
       </div>
 
       {/* Call-to-Action Section */}
-      <div className="text-center mt-16">
-        <button className="bg-green-600 text-white text-lg px-6 py-3 rounded-md shadow-lg hover:bg-green-700">
-          Get Started Today
-        </button>
-        <p className="text-sm text-gray-500 mt-4">
+      <div className="text-center mt- dark:bg-black 16 py-4">
+        <p className="text-sm text-gray-500  dark:text-white mt-4">
           Join the 17,536 businesses that have already benefited from our services
         </p>
       </div>
